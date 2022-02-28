@@ -11,16 +11,16 @@ cask "bazga-oxygen-xml-editor" do
 
   depends_on cask: "zulu-jdkfx-11"
 
-  livecheck do
-    url "https://www.oxygenxml.com/rssBuildID.xml"
-    strategy :page_match do |page|
-      version = page.match(/Oxygen\sXML\sEditor\sversion\s(\d+(?:\.\d+)+)/i)
-      build = page.match(/build\sid:\s(\d+)/i)
-      next if version.blank? || build.blank?
-
-      "#{version[1]},#{build[1]}"
-    end
-  end
+#  livecheck do
+#    url "https://www.oxygenxml.com/rssBuildID.xml"
+#    strategy :page_match do |page|
+#      version = page.match(/Oxygen\sXML\sEditor\sversion\s(\d+(?:\.\d+)+)/i)
+#      build = page.match(/build\sid:\s(\d+)/i)
+#      next if version.blank? || build.blank?
+#
+#      "#{version[1]},#{build[1]}"
+#    end
+#  end
 
   suite "Oxygen XML Editor"
 end
