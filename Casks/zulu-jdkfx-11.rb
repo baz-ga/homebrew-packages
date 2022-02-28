@@ -18,12 +18,6 @@ cask "zulu-jdkfx-11" do
 
   pkg "Double-Click to Install Azul Zulu JDK 11.pkg"
 
-  #uninstall pkgutil:
+  uninstall pkgutil: "com.azulsystems.zulu.11"
 
-  zap trash: [
-    "/Library/Java/JavaVirtualMachines/zulu-11.jdk",
-#    "~/Library/Caches/Zotero",
-#    "~/Library/Preferences/org.zotero.zotero-beta.plist",
-#    "~/Library/Saved Application State/org.zotero.zotero-beta.savedState",
-  ]
 end
