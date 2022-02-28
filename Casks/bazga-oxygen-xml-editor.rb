@@ -9,7 +9,7 @@ cask "bazga-oxygen-xml-editor" do
   desc "Tools for XML editing, including Oxygen XML Developer and Author"
   homepage "https://www.oxygenxml.com/xml_editor.html"
 
-  depends_on "zulu-jdkfx-11"
+  depends_on cask: "zulu-jdkfx-11"
 
   livecheck do
     url "https://www.oxygenxml.com/rssBuildID.xml"
