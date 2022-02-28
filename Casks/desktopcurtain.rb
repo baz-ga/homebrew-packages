@@ -1,8 +1,8 @@
 cask "desktopcurtain" do
-  version "313" #actually is 3.1.3 but in doenloadfile without dot
+  version "3.1.3" #actually is 3.1.3 but in doenloadfile without dot
   sha256 :no_check
 
-  url "https://manytricks.com/download/_do_not_hotlink_/desktopcurtain#{version}.dmg"
+  url "https://manytricks.com/download/_do_not_hotlink_/desktopcurtain#{version.delete('.')}.dmg"
   name "Desktop Curtain"
   desc "Covers your messy desktop. Not tat your desktop is ever messy."
   homepage "https://manytricks.com/desktopcurtain/"
