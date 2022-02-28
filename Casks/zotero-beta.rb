@@ -1,8 +1,10 @@
 cask "zotero-beta" do
   version "6.0-beta.2+8d8170583"
   sha256 :no_check
+  uriVersion = URI.encode_www_form_component("#{version}")
+
 #https://download.zotero.org/client/beta/6.0-beta.2%2B8d8170583/Zotero-6.0-beta.2%2B8d8170583.dmg
-  url "https://download.zotero.org/client/beta/#{version}/#{version}.dmg"
+  url "https://download.zotero.org/client/beta/#{uriVersion}/Zotero-#{uriVersion}.dmg"
   name "Zotero"
   desc "Collect, organize, cite, and share research sources"
   homepage "https://www.zotero.org/"
