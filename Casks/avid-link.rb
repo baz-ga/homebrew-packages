@@ -23,7 +23,7 @@ cask "avid-link" do
 
   uninstall script: "/Applications/Avid_Uninstaller/Avid Link/Avid Link Uninstaller.app/Contents/MacOS/AvidUninstaller"
 
-  zap trash [
+  zap trash: [
     "~/Library/Preferences/com.avid.link.plist",
     "~/Library/Preferences/com.avid.Avid Link.plist",
     "/Library/Application\ Support/CrashReporter/AvidLink_*.plist"
