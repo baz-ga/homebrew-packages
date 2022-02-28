@@ -1,7 +1,7 @@
 cask "bazga-oxygen-xml-editor" do
   arch = Hardware::CPU.intel? ? "" : "-aarch64"
 
-  version "23.1,2021121415" #Build id  2021121415
+  version "23.1,2021121415" #Build id 2021121415
   sha256 "d82f188e16ae6fb8eafd7b7f6404c0088b07d9d7958f380b87c887803364e479"
 
   url "https://archives.oxygenxml.com/Oxygen/Editor/InstData#{version.split(',').first}/MacOSX/VM/oxygen-openjdk#{arch}.dmg"
