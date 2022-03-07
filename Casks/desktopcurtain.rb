@@ -7,11 +7,12 @@ cask "desktopcurtain" do
   desc "Covers your messy desktop. Not tat your desktop is ever messy."
   homepage "https://manytricks.com/desktopcurtain/"
 
-  livecheck do
-    url "https://manytricks.com/download/_do_not_hotlink_/"
-    strategy :header_match
-    regex(/desktopcurtain\d+/i)
-  end
+#TODO check for updates
+#  livecheck do
+#    url "https://manytricks.com/download/_do_not_hotlink_/"
+#    strategy :header_match
+#    regex(/desktopcurtain\d+/i)
+#  end
 
   auto_updates true
 

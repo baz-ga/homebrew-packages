@@ -1,6 +1,7 @@
 cask "bazga-oxygen-xml-editor" do
   arch = Hardware::CPU.intel? ? "" : "-aarch64"
 
+  #TODO switch between architecture build and sha256
   version "23.1,2021121415" #Build id 2021121415
   sha256 "d82f188e16ae6fb8eafd7b7f6404c0088b07d9d7958f380b87c887803364e479"
 
@@ -11,6 +12,7 @@ cask "bazga-oxygen-xml-editor" do
 
   depends_on cask: "zulu-jdkfx-11"
 
+#TODO check for updates
 #  livecheck do
 #    url "https://www.oxygenxml.com/rssBuildID.xml"
 #    strategy :page_match do |page|

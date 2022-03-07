@@ -1,6 +1,7 @@
 cask "zulu-jdkfx-11" do
   version "11.0.14.1"
   #zulu version "11.54.25"
+  #TODO add non-aarch64 version
   sha256 "5d8fbd3f6b7684e3aebbca414cae58dfe1eb544dbf3b60266c5b3f6adad0cb37"
 
   url "https://cdn.azul.com/zulu/bin/zulu11.54.25-ca-fx-jdk#{version}-macosx_aarch64.dmg"
