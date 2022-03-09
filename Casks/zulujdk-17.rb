@@ -1,4 +1,4 @@
-cask "zulu-jdk" do
+cask "zulujdk-17" do
   arch = Hardware::CPU.intel? ? "x64" : "aarch64"
   
   version "17.32.13,17.0.2"
