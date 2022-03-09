@@ -19,7 +19,7 @@ cask "zulu-jdk" do
   livecheck do
     url "https://cdn.azul.com/zulu/bin/"
     strategy :page_match
-    regex(%r{href=.*?/zulu17\d{1,2}\.\d{1,2}-ca-jdk(17\.\d{1,2}.\d{1,2}\.\d{1,2})-macosx_(aarch64|x64).dmg}/i)
+    regex(%r{href=.*?zulu17\d{1,2}\.\d{1,2}-ca-jdk(17\.\d{1,2}.\d{1,2}\.\d{1,2})-macosx_(aarch64|x64).dmg/i})
   end
 
   auto_updates false
