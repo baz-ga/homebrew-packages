@@ -3,7 +3,8 @@ cask "ffm_anyconnect" do
 
   version "4.10.00093"
   sha256 :no_check
-  url "https://www.rz.uni-frankfurt.de/101565862/anyconnect-win-#{version.gsub(".", "_")}-core-vpn-predeploy-k9"
+  url "https://vpn-einwahl.uni-frankfurt.de/CACHE/stc/2/binaries/anyconnect-macos-#{version}-core-vpn-webdeploy-k9.dmg"
+  #https://www.rz.uni-frankfurt.de/96616025/anyconnect_macos_4_9_05042_predeploy_k9.dmg
   name "Cisco AnyConnect"
   desc "VPN client."
   homepage "https://www.rz.uni-frankfurt.de/45186826/VPN_SSL"
@@ -17,7 +18,7 @@ cask "ffm_anyconnect" do
 
   auto_updates true
 
-  installer manual: "Sophos Installer.app"
+  pkg "anyconnect-macos-4.10.00093-core-vpn-webdeploy-k9.pkg"
 
   #preflight do
 #    `softwareupdate --install-rosetta`
