@@ -1,4 +1,4 @@
-cask "ffm sophos" do
+cask "ffm_sophos" do
   arch = Hardware::CPU.intel? ? "" : "-aarch64"
 
   version "9.5.4"

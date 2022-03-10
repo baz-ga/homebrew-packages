@@ -1,4 +1,4 @@
-cask "ffm anyconnect" do
+cask "ffm_anyconnect" do
   arch = Hardware::CPU.intel? ? "" : "-aarch64"
 
   version "4.10.00093"
