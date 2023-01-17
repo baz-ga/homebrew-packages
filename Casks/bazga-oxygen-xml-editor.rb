@@ -1,8 +1,8 @@
 cask "bazga-oxygen-xml-editor" do
-  #arch currently not needed, e.g. in oxygen-openjdk#{arch}.dmg
-  #arch = Hardware::CPU.intel? ? "" : "-aarch64"
+  # arch currently not needed, e.g. in oxygen-openjdk#{arch}.dmg
+  # arch = Hardware::CPU.intel? ? "" : "-aarch64"
 
-  #TODO switch between architecture build and sha256
+  # TODO switch between architecture build and sha256
   version "24.1,2022110312"
   sha256 "bd28a3b961e0bb831dd3a3b9cf4999edc4c7738c9284dd8655b3d7c183702f23"
 
@@ -13,7 +13,7 @@ cask "bazga-oxygen-xml-editor" do
 
   depends_on macos: ">= :monterey"
 
-#TODO check for updates
+# TODO check for minor updates matching current major version
   livecheck do
     url "https://www.oxygenxml.com/rssBuildID.xml"
     strategy :page_match do |page|
