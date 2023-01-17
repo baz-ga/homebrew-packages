@@ -3,13 +3,14 @@ cask "bazga-oxygen-xml-editor" do
 
   #TODO switch between architecture build and sha256
   version "24.1,2022110312" #Build id 2021121415
-  sha256 "6dbb317eafbb9c450608629fdeae0cdd6ca2f84e1284c7573a2090488d9aa14b" #:no_check # md5 "e4dee154352970f3c265e6b79a0bed63"
+  sha256 "bd28a3b961e0bb831dd3a3b9cf4999edc4c7738c9284dd8655b3d7c183702f23" #:no_check # md5 "e4dee154352970f3c265e6b79a0bed63"
 
   url "https://archives.oxygenxml.com/Oxygen/Editor/InstData#{version.split(',').first}/MacOSX/VM/oxygen-openjdk#{arch}.dmg"
   name "oXygen XML Editor"
   desc "Tools for XML editing, including Oxygen XML Developer and Author"
   homepage "https://www.oxygenxml.com/xml_editor.html"
 
+  depends_on macos: ">= :monterey"
   #depends_on cask: "zulu-jdkfx-11"
 
 #TODO check for updates
