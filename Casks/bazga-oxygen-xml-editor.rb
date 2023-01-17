@@ -13,7 +13,7 @@ cask "bazga-oxygen-xml-editor" do
 
   depends_on macos: ">= :monterey"
 
-# TODO check for minor updates matching current major version
+  # TODO check for minor updates matching current major version
   livecheck do
     url "https://www.oxygenxml.com/rssBuildID.xml"
     strategy :page_match do |page|
