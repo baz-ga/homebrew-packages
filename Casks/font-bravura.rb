@@ -6,6 +6,8 @@ cask 'font-bravura' do
     name 'Bravura'	
     homepage 'https://www.smufl.org/fonts/'	
   
-    font 'bravura-bravura-1.392/redist/otf/Bravura.otf'	
-    font 'bravura-bravura-1.392/redist/otf/BravuraText.otf'	
+    #font 'bravura-bravura-1.392/redist/otf/Bravura.otf'	
+    #font 'bravura-bravura-1.392/redist/otf/BravuraText.otf'
+    artifact 'bravura-bravura-1.392/redist/otf/Bravura.otf', target: "/Library/Fonts/Bravura.otf"
+    artifact 'bravura-bravura-1.392/redist/otf/BravuraText.otf', target: "/Library/Fonts/BravuraText.otf"
   end
