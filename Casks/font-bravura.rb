@@ -6,6 +6,6 @@ cask 'font-bravura' do
     name 'Bravura'	
     homepage 'https://www.smufl.org/fonts/'	
   
-    font 'redist/otf/Bravura.otf'	
-    font 'redist/otf/BravuraText.otf'	
+    font 'bravura-bravura-1.392/redist/otf/Bravura.otf'	
+    font 'bravura-bravura-1.392/redist/otf/BravuraText.otf'	
   end
