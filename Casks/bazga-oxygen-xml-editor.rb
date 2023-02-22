@@ -6,7 +6,6 @@ cask "bazga-oxygen-xml-editor" do
   version "24.1,2022110312"
   sha256 "5f353c0f841ded34ddb42a287d531ec2d5ec23755921b94c31202f642ec651ab"
 
-  #eg  https://archives.oxygenxml.com/Oxygen/Editor/InstData24.1/MacOSX/VM/oxygen-openjdk-aarch64.dmg?_ga=2.253848520.1185206329.1676277524-27673526.1673876391
   url "https://archives.oxygenxml.com/Oxygen/Editor/InstData#{version.split(',').first}/MacOSX/VM/oxygen-openjdk#{arch}.dmg"
   name "oXygen XML Editor"
   desc "Tools for XML editing, including Oxygen XML Developer and Author"
