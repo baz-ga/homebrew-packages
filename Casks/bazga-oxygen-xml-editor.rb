@@ -5,7 +5,7 @@ cask "bazga-oxygen-xml-editor" do
 
   # TODO switch between architecture build and sha256
   version "24.1,2022110312"
-  sha256 #{sha}
+  sha256 "#{sha}"
   
 
   url "https://archives.oxygenxml.com/Oxygen/Editor/InstData#{version.split(',').first}/MacOSX/VM/oxygen-openjdk#{arch}.dmg"
