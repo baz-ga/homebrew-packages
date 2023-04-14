@@ -9,3 +9,5 @@ cask "adobe-bridge" do
 
 installer manual: "Bridge Installer.app"
 uninstall manual: "/Applications/Adobe Bridge #{version.csv.first}/Uninstall Adobe Bridge #{version.csv.first}"
+
+end
