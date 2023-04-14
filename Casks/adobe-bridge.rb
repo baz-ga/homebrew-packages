@@ -8,6 +8,8 @@ cask "adobe-bridge" do
     homepage "https://www.adobe.com/products/bridge.html"
 
 installer manual: "Bridge Installer.app"
-uninstall manual: "/Applications/Adobe Bridge #{version.csv.first}/Uninstall Adobe Bridge #{version.csv.first}"
+uninstall script: {
+            executable: "/Library/Application Support/Adobe/Uninstall/KBRG_13_0_3_32.app/Contents/MacOS/Uninstaller"
+          }
 
 end
