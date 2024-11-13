@@ -4,7 +4,7 @@ cask "avid-link" do
   version "24.10.0,10X2QR6Z" #21.12.1,5ID6IR1F
   sha256 :no_check
 
-  url "https://cdn.avid.com/AvidLink/20#{version.split(',').first}/#{version.split(',').last}/Avid_Link_#{version.split(',').first}_Mac.dmg"
+  url "https://cdn.avid.com/AvidLink/20#{version.split(',').first[0...-2}/#{version.split(',').last}/Avid_Link_#{version.split(',').first}_Mac.dmg"
   #url "https://cdn.avid.com/AvidLink/20#{version}/5ID6IR1F/Avid_Link_#{version}_Mac.dmg"
   name "Avid Link"
   desc "Avid Link is a free app for anyone looking to find, connect, and collaborate with other creatives, promote your work and get discovered, and purchase and manage products—all in one interface."
