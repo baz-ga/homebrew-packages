@@ -2,7 +2,7 @@ cask "avid-link" do
   arch = Hardware::CPU.intel? ? "" : "-aarch64"
   #https://cdn.avid.com/AvidLink/2024.10/10X2QR6Z/Avid_Link_24.10.0_Mac.pkg
   #https://cdn.avid.com/AvidLink/2024.10/10X2QR6Z/Avid_Link_24.10.0_Mac.dmg
-  version "24.10.0,10X2QR6Z" #21.12.1,5ID6IR1F
+  version "25.5.1,7DRQECTO" #21.12.1,5ID6IR1F
   sha256 :no_check
 
   url "https://cdn.avid.com/AvidLink/20#{version.split(',').first[0...-2]}/#{version.split(',').last}/Avid_Link_#{version.split(',').first}_Mac.pkg"
