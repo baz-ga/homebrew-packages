@@ -21,8 +21,8 @@ cask "avid-link" do
   auto_updates true
 
   pkg "AvidLink_Installer.pkg"
-
-  uninstall script: "/Applications/Avid_Uninstaller/Avid Link/Avid Link Uninstaller.app/Contents/MacOS/AvidUninstaller"
+  
+  uninstall script: "/Applications/Avid_Uninstallers/Avid Link/Avid Link Uninstaller.app/Contents/MacOS/AvidUninstaller"
 
   zap trash: [
     "~/Library/Preferences/com.avid.link.plist",
